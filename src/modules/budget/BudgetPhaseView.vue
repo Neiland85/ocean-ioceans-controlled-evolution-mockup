@@ -6,9 +6,8 @@
       </p>
       <h1>Budget Phase View</h1>
       <p>
-        Executive decision frame for Phase 0, Phase 1, the initial package and
-        the complete phased programme. The programme is presented as a controlled
-        framework, not a blank cheque.
+        Executive decision frame backed by synthetic demo fixtures. The complete
+        programme is presented as a controlled framework, not a blank cheque.
       </p>
     </header>
 
@@ -22,7 +21,7 @@
           <p class="summary-label">
             {{ phase.label }}
           </p>
-          <h2>{{ phase.amount }}</h2>
+          <h2>{{ amountLabel(phase) }}</h2>
           <p>{{ phase.meaning }}</p>
         </div>
 
@@ -33,11 +32,11 @@
           </div>
           <div>
             <dt>VAT</dt>
-            <dd>{{ phase.vat }}</dd>
+            <dd>{{ vatLabel(phase) }}</dd>
           </div>
           <div>
             <dt>Decision</dt>
-            <dd>{{ phase.decision }}</dd>
+            <dd>{{ decisionLabel(phase) }}</dd>
           </div>
         </dl>
       </article>
@@ -47,12 +46,13 @@
       <article class="control-panel">
         <h2>Scope control</h2>
         <ul class="audit-checklist">
-          <li
-            v-for="item in scopeRules"
-            :key="item"
-          >
-            {{ item }}
-          </li>
+          <li>No production commitment in this mockup</li>
+          <li>No real iOceans integration in this phase</li>
+          <li>No external APIs</li>
+          <li>No real scientific data</li>
+          <li>No credentials</li>
+          <li>No raw internal tool exports</li>
+          <li>Every phase has a decision gate</li>
         </ul>
       </article>
 
@@ -77,52 +77,29 @@
 </template>
 
 <script setup lang="ts">
-const budgetPhases = [
-  {
-    id: 'DEMO_BUDGET_PHASE_0',
-    label: 'Phase 0',
-    amount: '15.000 € + VAT',
-    meaning: 'Controlled discovery, validation and mockup alignment.',
-    status: 'requires_decision',
-    vat: 'not included',
-    decision: 'approve discovery'
-  },
-  {
-    id: 'DEMO_BUDGET_PHASE_1',
-    label: 'Phase 1',
-    amount: '32.000 € + VAT',
-    meaning: 'Initial operational build after validated interest.',
-    status: 'requires_decision',
-    vat: 'not included',
-    decision: 'approve initial build'
-  },
-  {
-    id: 'DEMO_BUDGET_PHASE_0_1',
-    label: 'Initial package',
-    amount: '47.000 € + VAT',
-    meaning: 'Phase 0 plus Phase 1 as a controlled starting package.',
-    status: 'requires_decision',
-    vat: 'not included',
-    decision: 'approve initial package'
-  },
-  {
-    id: 'DEMO_BUDGET_PROGRAM',
-    label: 'Complete programme',
-    amount: '150.000 € + VAT',
-    meaning: 'Phased framework after adoption signals, not a blank cheque.',
-    status: 'requires_decision',
-    vat: 'not included',
-    decision: 'approve by checkpoints'
-  }
-]
+import {
+  getBudgetPhases,
+  type BudgetPhaseRecord
+} from '../../data/demoRepository'
 
-const scopeRules = [
-  'No production commitment in this mockup',
-  'No real iOceans integration in this phase',
-  'No external APIs',
-  'No real scientific data',
-  'No credentials',
-  'No raw internal tool exports',
-  'Every phase has a decision gate'
-]
+const budgetPhases = getBudgetPhases()
+
+function amountLabel(phase: BudgetPhaseRecord): string {
+  return `${new Intl.NumberFormat('de-DE').format(phase.amountEur)} € + VAT`
+}
+
+function vatLabel(phase: BudgetPhaseRecord): string {
+  return phase.vat === 'not_included' ? 'not included' : phase.vat
+}
+
+function decisionLabel(phase: BudgetPhaseRecord): string {
+  const decisions: Record<string, string> = {
+    DEMO_BUDGET_PHASE_0: 'approve discovery',
+    DEMO_BUDGET_PHASE_1: 'approve initial build',
+    DEMO_BUDGET_PHASE_0_1: 'approve initial package',
+    DEMO_BUDGET_PROGRAM: 'approve by checkpoints'
+  }
+
+  return decisions[phase.id] ?? 'requires executive decision'
+}
 </script>
