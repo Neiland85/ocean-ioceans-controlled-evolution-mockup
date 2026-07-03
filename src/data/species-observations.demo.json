@@ -1,0 +1,19 @@
+{
+  "dataClassification": "synthetic_demo",
+  "records": [
+    {
+      "id": "DEMO_SPECIES_OBSERVATION_001",
+      "eventId": "DEMO_EVENT_001",
+      "speciesLabel": "Synthetic Species Group A",
+      "count": 12,
+      "status": "reviewed",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "reviewed",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "npm: install", "type": "shell", "command": "npm install", "problemMatcher": [] },
+    { "label": "npm: dev", "type": "shell", "command": "npm run dev", "problemMatcher": [] },
+    { "label": "npm: build", "type": "shell", "command": "npm run build", "problemMatcher": [] },
+    { "label": "npm: typecheck", "type": "shell", "command": "npm run typecheck", "problemMatcher": [] },
+    { "label": "npm: lint", "type": "shell", "command": "npm run lint", "problemMatcher": [] },
+    { "label": "npm: format", "type": "shell", "command": "npm run format", "problemMatcher": [] },
+    { "label": "check: sensitive", "type": "shell", "command": "npm run check:sensitive", "problemMatcher": [] },
+    { "label": "check: demo-data", "type": "shell", "command": "npm run check:demo-data", "problemMatcher": [] },
+    { "label": "docs: checklist", "type": "shell", "command": "npm run docs:checklist", "problemMatcher": [] }
+  ]
+}
+

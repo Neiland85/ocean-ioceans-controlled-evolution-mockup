@@ -1,0 +1,21 @@
+{
+  "dataClassification": "synthetic_demo",
+  "records": [
+    {
+      "id": "DEMO_MEASUREMENT_001",
+      "eventId": "DEMO_EVENT_001",
+      "metric": "synthetic_biodiversity_index",
+      "value": 72,
+      "unit": "demo_score",
+      "uncertainty": "medium",
+      "status": "pending_review",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "pending_review",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    }
+  ]
+}

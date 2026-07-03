@@ -1,0 +1,19 @@
+{
+  "dataClassification": "synthetic_demo",
+  "records": [
+    {
+      "id": "DEMO_LOG_001",
+      "actorRole": "System Demo",
+      "action": "created_demo_record",
+      "targetId": "DEMO_INSTALLATION_001",
+      "status": "internally_published",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "internally_published",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    }
+  ]
+}

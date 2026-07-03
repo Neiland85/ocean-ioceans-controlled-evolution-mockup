@@ -1,0 +1,19 @@
+{
+  "dataClassification": "synthetic_demo",
+  "records": [
+    {
+      "id": "DEMO_EVIDENCE_001",
+      "eventId": "DEMO_EVENT_001",
+      "assetType": "synthetic_photo_reference",
+      "checksum": "DEMO_SYNTHETIC_CHECKSUM_001",
+      "status": "approved",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "approved",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    }
+  ]
+}

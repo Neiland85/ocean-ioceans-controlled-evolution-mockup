@@ -1,0 +1,22 @@
+{
+  "dataClassification": "synthetic_demo",
+  "records": [
+    {
+      "id": "DEMO_ROLE_EXEC_001",
+      "name": "Executive Reviewer",
+      "permissions": [
+        "view_dashboard",
+        "review_budget",
+        "approve_phase"
+      ],
+      "status": "active",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "approved",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    }
+  ]
+}

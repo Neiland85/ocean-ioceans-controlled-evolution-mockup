@@ -1,0 +1,65 @@
+{
+  "dataClassification": "synthetic_demo",
+  "records": [
+    {
+      "id": "DEMO_BUDGET_PHASE_0",
+      "label": "Phase 0",
+      "amountEur": 15000,
+      "vat": "not_included",
+      "meaning": "Controlled discovery and mockup validation",
+      "status": "requires_decision",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "requires_decision",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    },
+    {
+      "id": "DEMO_BUDGET_PHASE_1",
+      "label": "Phase 1",
+      "amountEur": 32000,
+      "vat": "not_included",
+      "meaning": "Initial operational build after validation",
+      "status": "requires_decision",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "requires_decision",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    },
+    {
+      "id": "DEMO_BUDGET_PHASE_0_1",
+      "label": "Initial Phase 0 + Phase 1 package",
+      "amountEur": 47000,
+      "vat": "not_included",
+      "meaning": "Initial package, not a blank cheque",
+      "status": "requires_decision",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "requires_decision",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    },
+    {
+      "id": "DEMO_BUDGET_PROGRAM",
+      "label": "Complete phased programme",
+      "amountEur": 150000,
+      "vat": "not_included",
+      "meaning": "Framework by phases, not a blank cheque",
+      "status": "requires_decision",
+      "dataClassification": "synthetic_demo",
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "source": "demo_fixture",
+      "reviewStatus": "requires_decision",
+      "riskFlag": "none",
+      "auditRef": "DEMO_LOG_001"
+    }
+  ]
+}
