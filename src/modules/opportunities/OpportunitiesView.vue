@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1>Opportunities / Offers</h1>
-    <p>Synthetic pipeline records with stage, decision status and audit reference.</p>
-  </section>
+  <OpportunitiesScreen />
 </template>
 
+<script setup lang="ts">
+import OpportunitiesScreen from './OpportunitiesScreen.vue'
+</script>
