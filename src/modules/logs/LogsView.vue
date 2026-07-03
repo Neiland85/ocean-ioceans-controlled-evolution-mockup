@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1>Logs and States</h1>
-    <p>Visible state machine, audit references and operational traceability.</p>
-  </section>
+  <AuditLogScreen />
 </template>
 
+<script setup lang="ts">
+import AuditLogScreen from './AuditLogScreen.vue'
+</script>
