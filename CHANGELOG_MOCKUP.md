@@ -21,3 +21,7 @@ Added scientific evidence screen with synthetic evidence chain, review guardrail
 ## 0.6.0
 
 Added internal tools screen with controlled MR. WOLF_ and OES Funding Radar demo modules, guardrails and tool control matrix.
+
+## 0.7.0
+
+Added opportunities screen with synthetic pipeline, qualification logic, commercial guardrails and executive decision gates.
