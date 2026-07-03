@@ -33,3 +33,7 @@ Added governed AI screen with simulated AI action, allowed use, forbidden use, h
 ## 0.9.0
 
 Backed opportunities and governed AI screens with synthetic demo fixtures through demoRepository.
+
+## 0.10.0
+
+Backed evidence and logs screens with synthetic demo fixtures through demoRepository.
