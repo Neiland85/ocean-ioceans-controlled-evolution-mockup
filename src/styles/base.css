@@ -51,3 +51,70 @@ section {
   text-transform: uppercase;
 }
 
+.operational-dashboard {
+  display: grid;
+  gap: 24px;
+}
+
+.dashboard-header {
+  padding: 24px;
+  border: 1px solid #d7dee8;
+  border-radius: 16px;
+  background: white;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.summary-card {
+  padding: 18px;
+  border: 1px solid #d7dee8;
+  border-radius: 14px;
+  background: white;
+}
+
+.summary-card strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+.summary-label {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.summary-card span {
+  color: #56616f;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.control-panel {
+  display: block;
+}
+
+.state-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.state-list li {
+  padding: 6px 8px;
+  border: 1px solid #d7dee8;
+  border-radius: 999px;
+  background: #f7f9fb;
+  font-size: 13px;
+}
