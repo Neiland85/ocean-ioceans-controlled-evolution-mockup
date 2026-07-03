@@ -9,3 +9,7 @@ Added first operational control dashboard screen with visible synthetic summary,
 ## 0.3.0
 
 Added audit log screen with synthetic audit record, state transitions and export guardrails.
+
+## 0.4.0
+
+Added budget phase view with Phase 0, Phase 1, initial package, complete programme, scope control and executive decision framing.
