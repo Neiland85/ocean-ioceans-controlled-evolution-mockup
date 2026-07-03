@@ -17,3 +17,7 @@ Added budget phase view with Phase 0, Phase 1, initial package, complete program
 ## 0.5.0
 
 Added scientific evidence screen with synthetic evidence chain, review guardrails, measurement matrix and audit references.
+
+## 0.6.0
+
+Added internal tools screen with controlled MR. WOLF_ and OES Funding Radar demo modules, guardrails and tool control matrix.
