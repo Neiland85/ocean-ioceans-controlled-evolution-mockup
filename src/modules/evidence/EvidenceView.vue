@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1>Scientific Evidence</h1>
-    <p>Synthetic evidence assets, monitoring events, measurements, uncertainty and review status.</p>
-  </section>
+  <ScientificEvidenceScreen />
 </template>
 
+<script setup lang="ts">
+import ScientificEvidenceScreen from './ScientificEvidenceScreen.vue'
+</script>
