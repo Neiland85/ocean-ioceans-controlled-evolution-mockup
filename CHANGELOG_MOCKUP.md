@@ -25,3 +25,7 @@ Added internal tools screen with controlled MR. WOLF_ and OES Funding Radar demo
 ## 0.7.0
 
 Added opportunities screen with synthetic pipeline, qualification logic, commercial guardrails and executive decision gates.
+
+## 0.8.0
+
+Added governed AI screen with simulated AI action, allowed use, forbidden use, human review requirement and audit reference.

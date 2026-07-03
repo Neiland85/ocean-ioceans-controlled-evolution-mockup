@@ -354,3 +354,8 @@ section {
   color: #56616f;
   background: #f7f9fb;
 }
+
+.ai-governance-screen {
+  display: grid;
+  gap: 24px;
+}
