@@ -12,7 +12,10 @@
     "format": "prettier --write .",
     "check:sensitive": "node scripts/check-sensitive.mjs",
     "check:demo-data": "node scripts/validate-demo-data.mjs",
-    "docs:checklist": "test -f docs/ACCEPTANCE_CRITERIA.md && test -f 09_GUION_DEMO/CHECKLIST_PRE_OCEAN.md"
+    "docs:checklist": "test -f docs/ACCEPTANCE_CRITERIA.md && test -f 09_GUION_DEMO/CHECKLIST_PRE_OCEAN.md",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:all": "npm run check:sensitive && npm run check:demo-data && npm run typecheck && npm run lint && npm run test && npm run build"
   },
   "dependencies": {
     "vue": "^3.5.39",
@@ -22,13 +25,16 @@
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.13.2",
     "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/test-utils": "^2.4.11",
     "@vue/tsconfig": "^0.9.1",
     "eslint": "^10.6.0",
     "eslint-plugin-vue": "^10.9.2",
+    "jsdom": "^29.1.1",
     "prettier": "^3.9.4",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.1",
     "vite": "^8.1.1",
+    "vitest": "^4.1.9",
     "vue-eslint-parser": "^10.4.1",
     "vue-tsc": "^3.3.6"
   }

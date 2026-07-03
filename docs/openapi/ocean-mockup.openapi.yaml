@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  title: OCEAN iOceans Controlled Evolution Mockup API
+  version: 0.1.0
+  description: Synthetic mock contract only. No production API, no external calls, no real data.
+servers:
+  - url: /mockup
+paths:
+  /demo/installations:
+    get:
+      summary: List synthetic demo installations
+      responses:
+        "200":
+          description: Synthetic installation list
+  /demo/evidence-assets:
+    get:
+      summary: List synthetic demo evidence assets
+      responses:
+        "200":
+          description: Synthetic evidence asset list
+  /demo/opportunities:
+    get:
+      summary: List synthetic demo opportunities
+      responses:
+        "200":
+          description: Synthetic opportunity list
+  /demo/audit-logs:
+    get:
+      summary: List synthetic demo audit logs
+      responses:
+        "200":
+          description: Synthetic audit log list
+  /demo/ai-actions:
+    get:
+      summary: List synthetic governed AI demo actions
+      responses:
+        "200":
+          description: Synthetic governed AI action list
+components:
+  schemas:
+    DemoRecord:
+      type: object
+      required:
+        - id
+        - dataClassification
+        - auditRef
+      properties:
+        id:
+          type: string
+          pattern: "^DEMO_"
+        dataClassification:
+          type: string
+          const: synthetic_demo
+        status:
+          type: string
+        auditRef:
+          type: string
+          pattern: "^DEMO_LOG_"
