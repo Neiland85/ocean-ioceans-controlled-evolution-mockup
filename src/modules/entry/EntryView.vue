@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1>Single Entry / Operational Control</h1>
-    <p>One controlled entry point for synthetic records, roles, states and logs.</p>
-  </section>
+  <OperationalControlDashboard />
 </template>
 
+<script setup lang="ts">
+import OperationalControlDashboard from './OperationalControlDashboard.vue'
+</script>
