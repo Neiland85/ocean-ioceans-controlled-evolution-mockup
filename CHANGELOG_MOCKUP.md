@@ -29,3 +29,7 @@ Added opportunities screen with synthetic pipeline, qualification logic, commerc
 ## 0.8.0
 
 Added governed AI screen with simulated AI action, allowed use, forbidden use, human review requirement and audit reference.
+
+## 0.9.0
+
+Backed opportunities and governed AI screens with synthetic demo fixtures through demoRepository.
