@@ -2,13 +2,13 @@
   <section class="opportunities-screen">
     <header class="dashboard-header">
       <p class="eyebrow">
-        Opportunities / Offers
+        Synthetic Opportunities
       </p>
       <h1>Opportunities Screen</h1>
       <p>
-        Synthetic commercial pipeline for opportunity qualification, review
-        status, risk flags and executive decision gates. No real clients, no
-        real funding calls and no external APIs.
+        Fixture-backed opportunity pipeline for the controlled mockup. Every
+        opportunity is synthetic, reviewable and blocked from executive action
+        until a decision gate is explicit.
       </p>
     </header>
 
@@ -17,71 +17,64 @@
         <p class="summary-label">
           Opportunities
         </p>
-        <strong>1</strong>
-        <span>Synthetic opportunity record</span>
+        <strong>{{ opportunities.length }}</strong>
+        <span>Fixture-backed records</span>
       </article>
 
       <article class="summary-card">
         <p class="summary-label">
-          Stage
+          Classification
         </p>
-        <strong>Qualification</strong>
-        <span>Not approved for action yet</span>
+        <strong>synthetic_demo</strong>
+        <span>No real funding data</span>
       </article>
 
       <article class="summary-card">
         <p class="summary-label">
           Decision
         </p>
-        <strong>Required</strong>
-        <span>Executive gate visible</span>
-      </article>
-
-      <article class="summary-card">
-        <p class="summary-label">
-          Audit
-        </p>
-        <strong>DEMO_LOG_001</strong>
-        <span>Traceability attached</span>
+        <strong>requires_decision</strong>
+        <span>Executive gate is explicit</span>
       </article>
     </div>
 
     <div class="control-grid">
-      <article class="control-panel">
-        <h2>Pipeline logic</h2>
-        <ol>
-          <li>Opportunity enters as a synthetic record.</li>
-          <li>Fit, stage, source and risk are visible.</li>
-          <li>Internal tool output remains simulated.</li>
-          <li>Executive decision gate is required before action.</li>
-          <li>Audit reference controls traceability.</li>
-        </ol>
-      </article>
-
-      <article class="control-panel">
-        <h2>Demo opportunity</h2>
-        <dl class="audit-definition">
+      <article
+        v-for="opportunity in opportunities"
+        :key="opportunity.id"
+        class="control-panel"
+      >
+        <h2>{{ opportunity.title }}</h2>
+        <dl class="audit-grid">
           <div class="audit-field">
             <dt>ID</dt>
             <dd>
-              <strong>DEMO_OPPORTUNITY_001</strong>
-              <span>Synthetic opportunity reference</span>
+              <strong>{{ opportunity.id }}</strong>
+              <span>{{ opportunity.dataClassification }}</span>
             </dd>
           </div>
 
           <div class="audit-field">
-            <dt>Title</dt>
+            <dt>Stage</dt>
             <dd>
-              <strong>Synthetic Coastal Monitoring Opportunity</strong>
-              <span>Demo title, not a real funding call</span>
+              <strong>{{ opportunity.stage }}</strong>
+              <span>{{ opportunity.status }}</span>
             </dd>
           </div>
 
           <div class="audit-field">
-            <dt>Status</dt>
+            <dt>Review</dt>
             <dd>
-              <strong>requires_decision</strong>
-              <span>Executive gate is explicit</span>
+              <strong>{{ opportunity.reviewStatus }}</strong>
+              <span>{{ opportunity.riskFlag }}</span>
+            </dd>
+          </div>
+
+          <div class="audit-field">
+            <dt>Audit</dt>
+            <dd>
+              <strong>{{ opportunity.auditRef }}</strong>
+              <span>{{ opportunity.source }}</span>
             </dd>
           </div>
         </dl>
@@ -102,3 +95,9 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { getOpportunities } from '../../data/demoRepository'
+
+const opportunities = getOpportunities()
+</script>

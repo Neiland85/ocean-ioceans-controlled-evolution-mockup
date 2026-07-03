@@ -6,9 +6,8 @@
       </p>
       <h1>Governed AI Screen</h1>
       <p>
-        Simulated AI actions with explicit purpose, allowed inputs, forbidden
-        inputs, human review and audit references. No real AI calls, no external
-        APIs and no unreviewed conclusions.
+        Fixture-backed AI governance screen. No real AI calls, no external API
+        calls and no output can be published without human review.
       </p>
     </header>
 
@@ -17,24 +16,16 @@
         <p class="summary-label">
           AI actions
         </p>
-        <strong>1</strong>
-        <span>Simulated demo action</span>
+        <strong>{{ aiActions.length }}</strong>
+        <span>Fixture-backed records</span>
       </article>
 
       <article class="summary-card">
         <p class="summary-label">
           Approval
         </p>
-        <strong>Required</strong>
-        <span>Human review before use</span>
-      </article>
-
-      <article class="summary-card">
-        <p class="summary-label">
-          Data
-        </p>
-        <strong>Synthetic</strong>
-        <span>No real records allowed</span>
+        <strong>humanApprovalRequired</strong>
+        <span>AI cannot publish directly</span>
       </article>
 
       <article class="summary-card">
@@ -42,7 +33,7 @@
           Audit
         </p>
         <strong>DEMO_LOG_001</strong>
-        <span>Traceability attached</span>
+        <span>Every AI action leaves a trace</span>
       </article>
     </div>
 
@@ -70,30 +61,42 @@
         </ul>
       </article>
 
-      <article class="control-panel">
+      <article
+        v-for="action in aiActions"
+        :key="action.id"
+        class="control-panel"
+      >
         <h2>Demo AI action</h2>
-        <dl class="audit-definition">
+        <dl class="audit-grid">
           <div class="audit-field">
             <dt>ID</dt>
             <dd>
-              <strong>DEMO_AI_ACTION_001</strong>
-              <span>Synthetic AI action reference</span>
+              <strong>{{ action.id }}</strong>
+              <span>{{ action.dataClassification }}</span>
             </dd>
           </div>
 
           <div class="audit-field">
             <dt>Action</dt>
             <dd>
-              <strong>summarize_synthetic_evidence</strong>
-              <span>Demo-only summary action</span>
+              <strong>{{ action.actionType }}</strong>
+              <span>Demo-only action</span>
             </dd>
           </div>
 
           <div class="audit-field">
             <dt>Review</dt>
             <dd>
-              <strong>humanApprovalRequired</strong>
+              <strong>{{ reviewLabel(action.humanApprovalRequired) }}</strong>
               <span>AI cannot publish directly</span>
+            </dd>
+          </div>
+
+          <div class="audit-field">
+            <dt>Audit</dt>
+            <dd>
+              <strong>{{ action.auditRef }}</strong>
+              <span>{{ action.source }}</span>
             </dd>
           </div>
         </dl>
@@ -101,3 +104,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { getAIActions } from '../../data/demoRepository'
+
+const aiActions = getAIActions()
+
+function reviewLabel(required: boolean): string {
+  return required ? 'humanApprovalRequired' : 'humanApprovalNotRequired'
+}
+</script>
