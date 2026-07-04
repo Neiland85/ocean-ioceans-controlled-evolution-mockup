@@ -26,6 +26,10 @@ export interface BudgetPhaseRecord extends BaseDemoRecord {
   amountEur: number
   vat: 'not_included'
   meaning: string
+  block: 'block_1' | 'block_2'
+  blockLabel: string
+  contractStatus: 'contract_first' | 'deferred_reference'
+  scopeItems?: readonly string[]
 }
 
 export interface AuditLogRecord extends BaseDemoRecord {

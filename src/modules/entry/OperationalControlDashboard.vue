@@ -59,9 +59,9 @@
           The complete programme remains a phased framework, not a blank cheque.
         </p>
         <ul>
-          <li>Phase 0: 15.000 € + VAT</li>
-          <li>Phase 1: 32.000 € + VAT</li>
-          <li>Initial package: 47.000 € + VAT</li>
+          <li>Phase 0: 7.500 € + VAT paid start gate</li>
+          <li>Block 1: 45.000 € + VAT across seven uneven phases</li>
+          <li>Block 2: 105.000 € + VAT deferred reference</li>
           <li>Programme framework: 150.000 € + VAT</li>
         </ul>
       </article>
