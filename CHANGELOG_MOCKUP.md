@@ -37,3 +37,7 @@ Backed opportunities and governed AI screens with synthetic demo fixtures throug
 ## 0.10.0
 
 Backed evidence and logs screens with synthetic demo fixtures through demoRepository.
+
+## 0.7.1
+
+Added endpoint review and demo runbook for non-technical and scientific stakeholder presentation.
