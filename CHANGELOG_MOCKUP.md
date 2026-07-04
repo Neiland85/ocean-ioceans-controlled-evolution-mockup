@@ -53,3 +53,7 @@ Updated demo delivery wording to align current presentation materials with the v
 ## 0.7.4
 
 Fixed delivery markdown fences and added a guardrail test to keep delivery and review markdown files balanced and clean.
+
+## 0.7.5
+
+Organized root-level client package folders under docs/client-package and moved internal-only material under docs/internal. Added a repository-structure guardrail test.

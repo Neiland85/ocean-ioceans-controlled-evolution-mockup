@@ -14,7 +14,7 @@ coverage/
 *.zip
 __MACOSX/
 .DS_Store
-99_INTERNO_NO_ENVIAR/
+/99_INTERNO_NO_ENVIAR/
 tmp/
 temp/
 exports/raw/
