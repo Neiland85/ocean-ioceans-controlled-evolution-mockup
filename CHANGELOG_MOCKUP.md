@@ -41,3 +41,7 @@ Backed evidence and logs screens with synthetic demo fixtures through demoReposi
 ## 0.7.1
 
 Added endpoint review and demo runbook for non-technical and scientific stakeholder presentation.
+
+## 0.7.2
+
+Adjusted budget model to a two-block commercial structure: Block 1 as the first contracted block at 45,000 EUR + VAT across seven uneven task-valued phases, and Block 2 as a deferred expansion reference.
