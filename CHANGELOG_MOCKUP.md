@@ -49,3 +49,7 @@ Adjusted budget model to a two-block commercial structure: Block 1 as the first 
 ## 0.7.3
 
 Updated demo delivery wording to align current presentation materials with the v0.7.2 two-block commercial budget model.
+
+## 0.7.4
+
+Fixed delivery markdown fences and added a guardrail test to keep delivery and review markdown files balanced and clean.
