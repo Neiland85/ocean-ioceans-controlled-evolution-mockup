@@ -1,4 +1,4 @@
-# Demo Runbook — OCEAN / iOceans Controlled Mockup v0.7.4
+# Demo Runbook — OCEAN / iOceans Controlled Mockup v0.7.5
 
 ## Purpose
 
@@ -116,11 +116,11 @@ For technical validation, run:
 npm run check:all
 ```
 
-Expected result at v0.7.4:
+Expected result at v0.7.5:
 
 ```text
-Test Files: 13 passed
-Tests: 16 passed
+Test Files: 14 passed
+Tests: 17 passed
 Build: passed
 Sensitive material check: passed
 Demo data validation: passed
@@ -136,6 +136,7 @@ Send Miguel:
 - Delivery status document
 - Client handoff document
 - Commercial block plan
+- Client package
 - Scientific review pack
 - Scientist checklist
 

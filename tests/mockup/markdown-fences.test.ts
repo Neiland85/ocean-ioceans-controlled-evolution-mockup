@@ -2,11 +2,13 @@ import fs from 'node:fs'
 import { describe, expect, it } from 'vitest'
 
 const markdownFiles = [
-  'docs/demo/DEMO_RUNBOOK_v0.7.4.md',
-  'docs/demo/ENDPOINT_REVIEW_v0.7.4.md',
+  'docs/demo/DEMO_RUNBOOK_v0.7.5.md',
+  'docs/demo/ENDPOINT_REVIEW_v0.7.5.md',
   'docs/commercial/COMMERCIAL_BLOCK_PLAN_v0.7.2.md',
   'docs/science/SCIENTIFIC_REVIEW_PACK_v0.7.0.md',
-  'docs/science/SCIENTIST_REVIEW_CHECKLIST_v0.7.0.md'
+  'docs/science/SCIENTIST_REVIEW_CHECKLIST_v0.7.0.md',
+  'docs/client-package/README.md',
+  'docs/internal/README.md'
 ]
 
 describe('markdown fences', () => {
