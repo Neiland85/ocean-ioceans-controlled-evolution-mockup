@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-const demoDataDir = path.resolve('02_DATA_DEMO')
+const demoDataDir = path.resolve('docs/client-package/02_DATA_DEMO')
 
 function walkJsonFiles(dir: string): string[] {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
