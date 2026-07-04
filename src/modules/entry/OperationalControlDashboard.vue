@@ -55,8 +55,7 @@
       <article class="control-panel">
         <h2>Decision frame</h2>
         <p>
-          Phase 0 and Phase 1 are presented as a controlled initial package.
-          The complete programme remains a phased framework, not a blank cheque.
+          Block 1 is presented as the first contracted block: 45,000 EUR + VAT across seven uneven phases. Block 2 remains deferred, not contracted now.
         </p>
         <ul>
           <li>Phase 0: 7.500 € + VAT paid start gate</li>
@@ -98,8 +97,8 @@ const summaryCards = [
   },
   {
     label: 'Budget phases',
-    value: '4',
-    hint: 'Phase 0, Phase 1, package, programme'
+    value: '7 + 1',
+    hint: 'Seven Block 1 phases plus deferred Block 2'
   }
 ]
 

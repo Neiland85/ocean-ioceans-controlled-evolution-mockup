@@ -45,3 +45,7 @@ Added endpoint review and demo runbook for non-technical and scientific stakehol
 ## 0.7.2
 
 Adjusted budget model to a two-block commercial structure: Block 1 as the first contracted block at 45,000 EUR + VAT across seven uneven task-valued phases, and Block 2 as a deferred expansion reference.
+
+## 0.7.3
+
+Updated demo delivery wording to align current presentation materials with the v0.7.2 two-block commercial budget model.

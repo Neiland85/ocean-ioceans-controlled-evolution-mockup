@@ -1,8 +1,8 @@
-# Demo Runbook — OCEAN / iOceans Controlled Mockup v0.7.1
+# Demo Runbook — OCEAN / iOceans Controlled Mockup v0.7.3
 
 ## Purpose
 
-This runbook explains how to present the mockup in a short review session.
+This runbook explains how to present the current controlled mockup in a short review session.
 
 The intended audience is Miguel, OCEAN stakeholders and scientific reviewers.
 
@@ -12,25 +12,22 @@ Preferred format:
 
 ```text
 Live demo URL + 3 minute narrated walkthrough + repository validation notes
-```
-
 Terminal execution should be optional.
 
-## What to avoid
+What to avoid
 
 Do not start with:
 
-- npm commands
-- repository structure
-- implementation details
-- framework explanation
-- code walkthrough
+npm commands
+repository structure
+implementation details
+framework explanation
+code walkthrough
 
 Start with the operating model.
 
-## Three minute demo script
-
-### 0:00 — Opening
+Three minute demo script
+0:00 — Opening
 
 This is a controlled mockup, not a production system.
 
@@ -38,17 +35,21 @@ It contains no real OCEAN data, no credentials, no external APIs and no real sci
 
 The point is to make the operating model visible before connecting real systems.
 
-### 0:20 — Budget
+0:20 — Budget
 
 Show Budget first.
 
 Explain:
 
-Budget is represented as controlled phases, not an open-ended blank cheque.
+Budget is now represented as a two-block commercial control model.
 
-Each phase is visible and reviewable.
+Block 1 is the first contracted block: 45,000 EUR + VAT across seven uneven task-valued phases.
 
-### 0:45 — Opportunities
+Block 2 is a deferred expansion reference: 105,000 EUR + VAT.
+
+The total programme reference is 150,000 EUR + VAT, but the first decision remains limited to Block 1.
+
+0:45 — Opportunities
 
 Show Opportunities.
 
@@ -60,7 +61,7 @@ They require review status and decision gates.
 
 No outreach or offer is generated automatically.
 
-### 1:10 — Governed AI
+1:10 — Governed AI
 
 Show Governed AI.
 
@@ -70,7 +71,7 @@ AI is treated as an assistant, not an authority.
 
 It can summarize synthetic evidence or flag missing metadata, but it cannot produce final scientific conclusions or publish without human approval.
 
-### 1:40 — Evidence
+1:40 — Evidence
 
 Show Evidence.
 
@@ -82,7 +83,7 @@ Evidence assets need source, method, review status and audit reference.
 
 The model separates evidence, interpretation and decision.
 
-### 2:10 — Logs
+2:10 — Logs
 
 Show Logs.
 
@@ -92,63 +93,51 @@ Every relevant action should leave a trace: actor role, target object, review st
 
 Logs are part of the operating model, not decoration.
 
-### 2:35 — Scientific Review Pack
-
-Show:
-
-```text
-docs/science/SCIENTIFIC_REVIEW_PACK_v0.7.0.md
-docs/science/SCIENTIST_REVIEW_CHECKLIST_v0.7.0.md
-```
+2:35 — Scientific review
 
 Explain:
 
-This is included so scientific reviewers can evaluate the model without confusing the mockup with a final scientific platform.
+The scientific review pack is included so scientific reviewers can evaluate the model without confusing the mockup with a final scientific platform.
 
-### 2:55 — Close
+2:55 — Close
 
 The next step is not adding more screens.
 
-The next step is deciding which entities, states, evidence assets and review gates matter for a real phase 1.
+The next step is deciding whether OCEAN wants to contract Block 1: 45,000 EUR + VAT, split into seven controlled phases.
 
-## Optional terminal validation
+Optional terminal validation
 
 For technical validation, run:
 
-```text
 npm run check:all
-```
 
-Expected result at v0.7.0:
+Expected result at v0.7.3:
 
-```text
-Test Files: 10 passed
-Tests: 13 passed
+Test Files: 11 passed
+Tests: 14 passed
 Build: passed
 Sensitive material check: passed
 Demo data validation: passed
-```
-
-## Preferred delivery package
+Preferred delivery package
 
 Send Miguel:
 
-- Live demo URL
-- GitHub repository or release tag
-- Short video walkthrough
-- Delivery status document
-- Client handoff document
-- Scientific review pack
-- Scientist checklist
-
-## Suggested message
-
-```text
-Miguel, te paso una versión controlada del mockup en v0.7.0.
+Live demo URL
+GitHub repository or release tag
+Short video walkthrough
+Delivery status document
+Client handoff document
+Commercial block plan
+Scientific review pack
+Scientist checklist
+Suggested message
+Miguel, te paso una versión controlada del mockup.
 
 La forma más cómoda de revisarlo es abrir la demo y ver primero el vídeo corto. La terminal queda solo como validación técnica opcional.
 
 Lo importante no es la interfaz en sí, sino el modelo operativo: evidencia, estados, revisión, logs, presupuesto, oportunidades e IA gobernada.
 
-He añadido un paquete específico de revisión científica para que OCEAN pueda evaluar el enfoque sin confundir evidencia, interpretación, conclusión y decisión.
-```
+He añadido también el modelo comercial por bloques: un Bloque 1 de 45.000 EUR + IVA, dividido en 7 fases irregulares según el peso real de cada tarea, y un Bloque 2 diferido como referencia posterior.
+
+La idea no es vender todo el programa de golpe, sino empezar con un primer bloque controlado, profesional y defendible.
+
