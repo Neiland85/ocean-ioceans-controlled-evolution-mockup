@@ -36,6 +36,6 @@ The review objective is to show how Mr.Wolf can become visible inside a controll
 
 Recommended client-facing preview URL:
 
-https://neiland85.github.io/ocean-ioceans-controlled-evolution-mockup/
+https://ocean-ioceans-controlled-evolution.vercel.app
 
 Review the live preview before reading the repository or technical evidence.
