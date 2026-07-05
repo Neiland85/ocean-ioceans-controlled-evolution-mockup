@@ -1,14 +1,12 @@
-# Preview URL — OCEAN / iOceans Controlled Mockup v0.7.8
+# Live Preview — OCEAN / iOceans Controlled Mockup v0.7.9
 
 ## Recommended review link
 
-The intended client-facing preview URL is:
-
-https://neiland85.github.io/ocean-ioceans-controlled-evolution-mockup/
+https://ocean-ioceans-controlled-evolution.vercel.app
 
 ## Review instruction
 
-Open the preview URL first.
+Open the live preview first.
 
 Do not start with the repository.
 

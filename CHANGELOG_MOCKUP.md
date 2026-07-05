@@ -1,5 +1,15 @@
 # Mockup Changelog
 
+## 0.7.9
+
+Replaced GitHub Pages preview target with Vercel deployment target.
+
+- Removed GitHub Pages workflow because the current GitHub plan does not support Pages for this repository.
+- Removed repository-level GitHub Pages base path from Vite config.
+- Added Vercel deployment configuration.
+- Added client-facing live preview document.
+- Added a Vercel preview guardrail test.
+
 ## 0.7.8
 
 Added GitHub Pages static preview deployment.

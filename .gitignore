@@ -19,3 +19,4 @@ tmp/
 temp/
 exports/raw/
 
+.vercel
