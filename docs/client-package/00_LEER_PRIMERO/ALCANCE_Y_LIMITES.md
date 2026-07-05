@@ -7,4 +7,3 @@
 - No real email sending.
 - No real AI execution without explicit authorization.
 - No real personal, client, scientific or operational data.
-
