@@ -1,5 +1,15 @@
 # Mockup Changelog
 
+## 0.7.8
+
+Added GitHub Pages static preview deployment.
+
+- Added GitHub Actions workflow for Pages.
+- Configured Vite base path for repository-level GitHub Pages.
+- Added client-facing preview URL document.
+- Added preview review order: open live demo before repository or technical evidence.
+- Added a GitHub Pages guardrail test.
+
 ## 0.7.7
 
 Added Mr.Wolf as an explicit Block 1 workstream in the commercial contract model.

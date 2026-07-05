@@ -31,3 +31,11 @@ Mr.Wolf is included as an internal OCEAN capability to be framed, governed and p
 The mockup does not replace Mr.Wolf, does not rebuild it from scratch and does not connect to real Mr.Wolf systems.
 
 The review objective is to show how Mr.Wolf can become visible inside a controlled operating model: entities, states, evidence, review gates, audit logs and AI boundaries.
+
+## Live preview
+
+Recommended client-facing preview URL:
+
+https://neiland85.github.io/ocean-ioceans-controlled-evolution-mockup/
+
+Review the live preview before reading the repository or technical evidence.
