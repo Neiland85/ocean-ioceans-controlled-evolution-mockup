@@ -1,5 +1,16 @@
 # Mockup Changelog
 
+## 0.7.7
+
+Added Mr.Wolf as an explicit Block 1 workstream in the commercial contract model.
+
+- Added Commercial Block Plan v0.7.7.
+- Positioned Mr.Wolf as an internal OCEAN capability, not an external replacement.
+- Added Mr.Wolf operational layer to Phase 3.
+- Added Mr.Wolf technical contract and reproducible validation to Phase 5.
+- Updated client package and demo review language.
+- Added a Mr.Wolf guardrail test.
+
 ## 0.1.0
 
 Initial controlled workspace.\n\n## 0.2.0
