@@ -139,3 +139,21 @@ Before connecting real data, OCEAN should decide:
 - Which AI actions are forbidden
 - Which fields must never be optional
 - Which states are operationally meaningful
+
+## Mr.Wolf review relevance
+
+Mr.Wolf is not represented as a live endpoint in this mockup.
+
+It is represented as an internal OCEAN capability prepared for future governance and integration.
+
+Relevant review artifacts:
+
+- docs/client-package/05_HERRAMIENTAS_INTERNAS_DEMO/MR_WOLF_DEMO_SPEC.md
+- docs/commercial/COMMERCIAL_BLOCK_PLAN_v0.7.7.md
+
+Current boundary:
+
+- no real Mr.Wolf integration
+- no real Mr.Wolf API call
+- no real Mr.Wolf data
+- no replacement of the existing internal tool

@@ -5,10 +5,11 @@ const markdownFiles = [
   'docs/demo/DEMO_RUNBOOK_v0.7.5.md',
   'docs/demo/ENDPOINT_REVIEW_v0.7.5.md',
   'docs/commercial/COMMERCIAL_BLOCK_PLAN_v0.7.2.md',
-  'docs/science/SCIENTIFIC_REVIEW_PACK_v0.7.0.md',
-  'docs/science/SCIENTIST_REVIEW_CHECKLIST_v0.7.0.md',
+  'docs/commercial/COMMERCIAL_BLOCK_PLAN_v0.7.7.md',
   'docs/client-package/README.md',
-  'docs/internal/README.md'
+  'docs/client-package/05_HERRAMIENTAS_INTERNAS_DEMO/MR_WOLF_DEMO_SPEC.md',
+  'docs/science/SCIENTIFIC_REVIEW_PACK_v0.7.0.md',
+  'docs/science/SCIENTIST_REVIEW_CHECKLIST_v0.7.0.md'
 ]
 
 describe('markdown fences', () => {
