@@ -119,8 +119,8 @@ npm run check:all
 Expected result at v0.7.5:
 
 ```text
-Test Files: 15 passed
-Tests: 18 passed
+Test Files: 16 passed
+Tests: 19 passed
 Build: passed
 Sensitive material check: passed
 Demo data validation: passed
