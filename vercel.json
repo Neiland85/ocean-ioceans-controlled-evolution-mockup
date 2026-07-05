@@ -1,5 +1,11 @@
 {
   "framework": "vite",
   "buildCommand": "npm run check:all",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }

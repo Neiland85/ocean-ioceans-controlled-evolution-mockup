@@ -1,40 +1,42 @@
 <template>
-  <main class="app-shell">
-    <ModuleCard
-      eyebrow="OCEAN / iOceans"
-      title="Controlled Evolution Mockup"
-      description="Do not replace iOceans. Do not sell another product. Secure, order and integrate."
-    />
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="app-eyebrow">OCEAN / iOceans Controlled Mockup</p>
+        <h1>Operational Evidence Preview</h1>
+      </div>
 
-    <nav class="nav">
-      <RouterLink to="/">
-        Entry
-      </RouterLink>
-      <RouterLink to="/evidence">
-        Evidence
-      </RouterLink>
-      <RouterLink to="/internal-tools">
-        Internal Tools
-      </RouterLink>
-      <RouterLink to="/opportunities">
-        Opportunities
-      </RouterLink>
-      <RouterLink to="/ai-governance">
-        Governed AI
-      </RouterLink>
-      <RouterLink to="/logs">
-        Logs
-      </RouterLink>
-      <RouterLink to="/budget">
-        Budget
-      </RouterLink>
-    </nav>
+      <nav class="nav" aria-label="Demo navigation">
+        <RouterLink to="/">
+          Overview
+        </RouterLink>
+        <RouterLink to="/evidence">
+          Evidence
+        </RouterLink>
+        <RouterLink to="/internal-tools">
+          Internal Tools
+        </RouterLink>
+        <RouterLink to="/opportunities">
+          Opportunities
+        </RouterLink>
+        <RouterLink to="/ai-governance">
+          AI Governance
+        </RouterLink>
+        <RouterLink to="/logs">
+          Logs
+        </RouterLink>
+        <RouterLink to="/budget">
+          Budget
+        </RouterLink>
+      </nav>
+    </header>
 
-    <RouterView />
-  </main>
+    <main>
+      <RouterView />
+    </main>
+  </div>
 </template>
 
 <script setup lang="ts">
-import ModuleCard from './components/ModuleCard.vue'
+import { RouterLink, RouterView } from 'vue-router'
 </script>
-
