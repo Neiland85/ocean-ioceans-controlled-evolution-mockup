@@ -23,3 +23,11 @@ It is intentionally separated from application code.
 This folder is for review and controlled delivery.
 
 It must not contain real OCEAN data, credentials, external API keys, real scientific measurements or internal-only material.
+
+## Mr.Wolf workstream
+
+Mr.Wolf is included as an internal OCEAN capability to be framed, governed and prepared for future integration.
+
+The mockup does not replace Mr.Wolf, does not rebuild it from scratch and does not connect to real Mr.Wolf systems.
+
+The review objective is to show how Mr.Wolf can become visible inside a controlled operating model: entities, states, evidence, review gates, audit logs and AI boundaries.

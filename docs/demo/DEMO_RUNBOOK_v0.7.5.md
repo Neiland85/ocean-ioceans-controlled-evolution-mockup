@@ -119,8 +119,8 @@ npm run check:all
 Expected result at v0.7.5:
 
 ```text
-Test Files: 14 passed
-Tests: 17 passed
+Test Files: 15 passed
+Tests: 18 passed
 Build: passed
 Sensitive material check: passed
 Demo data validation: passed
@@ -153,3 +153,15 @@ He añadido también el modelo comercial por bloques: un Bloque 1 de 45.000 EUR 
 
 La idea no es vender todo el programa de golpe, sino empezar con un primer bloque controlado, profesional y defendible.
 ```
+
+## Mr.Wolf demo note v0.7.7
+
+Show the Mr.Wolf demo specification.
+
+Explain:
+
+Mr.Wolf is not being replaced.
+
+The proposal gives Mr.Wolf a stronger operating frame: entities, states, review gates, evidence links, audit logs and governed AI boundaries.
+
+This keeps the internal OCEAN tool visible and prepares it for future integration without claiming real integration in the mockup.
