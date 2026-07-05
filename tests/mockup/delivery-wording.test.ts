@@ -13,8 +13,8 @@ describe('delivery wording', () => {
     expect(text).toContain('Block 2')
     expect(text).toContain('105,000 EUR + VAT')
     expect(text).toContain('seven uneven')
-    expect(text).toContain('Test Files: 15 passed')
-    expect(text).toContain('Tests: 18 passed')
+    expect(text).toContain('Test Files: 16 passed')
+    expect(text).toContain('Tests: 19 passed')
     expect(text).toContain('Client package')
 
     expect(text).not.toContain('32.000 € + VAT')
